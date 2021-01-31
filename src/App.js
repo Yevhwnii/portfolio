@@ -18,7 +18,7 @@ function App() {
           <Grid item lg={3} md={4} xs={12}>
             <Profile />
           </Grid>
-          <Grid item xs style={{ backgroundColor: 'green' }}>
+          <Grid item xs>
             <Header />
             <Switch>
               <Route path='/' exact>

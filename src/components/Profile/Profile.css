@@ -36,7 +36,7 @@
 .profile_information {
   top: 0;
   left: 0;
-  margin: -44px 10px 30px;
+  margin: -54px 10px 15px;
 }
 
 .profile_information .timeline .timeline_content {
@@ -44,7 +44,7 @@
 }
 
 .profile_buttonWrapper {
-  margin-top: 10px;
+  margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: center;

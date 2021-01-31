@@ -8,6 +8,11 @@
   line-height: 35px;
   min-width: 100px;
   outline: none !important;
+  transition: 0.3s all ease-in-out !important;
+}
+
+.custom_btn:hover {
+  background-color: var(--main-color-hover) !important;
 }
 
 .custom_btn .btn_iconContainer {
@@ -28,6 +33,7 @@
 }
 
 .custom_btn .btn_text {
+  font-family: 'Encode Sans';
   font-size: 14px;
   text-transform: none;
   text-align: center;

@@ -50,11 +50,13 @@
 }
 
 .timeline .timelineItem_title {
+  font-family: 'Encode Sans';
   font-size: 14px;
   font-weight: bold;
 }
 
 .timeline .timelineItem_text {
+  font-family: 'Encode Sans';
   font-size: 13px !important;
   color: #7f7f7f;
 }

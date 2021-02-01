@@ -41,6 +41,14 @@ const Header = () => {
             }>
             Portfolio
           </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to='/contact'
+            className={
+              path === '/contact' ? 'header_link_active' : 'header_link'
+            }>
+            Contact
+          </Nav.Link>
         </Nav>
         <div className='header_right'>
           <CustomButton text='Hire me' icon={<TelegramIcon />} />

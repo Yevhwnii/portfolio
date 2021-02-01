@@ -1,0 +1,20 @@
+.graph_container .graph_wrapper {
+  margin-bottom: 20px;
+}
+
+.graph_container .graph_name {
+  font-weight: 500;
+  font-family: 'Encode Sans', sans-serif;
+  margin-bottom: 3px;
+}
+
+.graph_container .MuiLinearProgress-root {
+  height: 5px;
+}
+.graph_container .MuiLinearProgress-barColorPrimary {
+  background-color: var(--main-color);
+}
+
+.graph_container .MuiLinearProgress-colorPrimary {
+  background-color: #dfdfdf;
+}

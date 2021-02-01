@@ -1,0 +1,25 @@
+.card_container {
+  height: 100%;
+  text-align: center;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+.card_container .card_title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: center;
+}
+.card_container .card_desc {
+  color: #989898;
+  border-color: var(--main-color);
+  margin-right: 5px;
+  text-align: center;
+}
+.card_container .card_icon > .MuiSvgIcon-root {
+  font-size: 46px;
+  margin-left: 0;
+  font-weight: 300;
+  color: darkslategray;
+}

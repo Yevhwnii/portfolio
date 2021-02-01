@@ -37,6 +37,10 @@
   border-bottom-left-radius: 6px !important;
 }
 
+.header .header_home > .MuiSvgIcon-root {
+  color: darkslategray;
+}
+
 .header .header_left {
   margin-right: auto;
 }

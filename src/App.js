@@ -6,7 +6,9 @@ import Profile from './components/Profile';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Resume from './pages/Resume';
+import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
 
 import './App.css';
 
@@ -20,14 +22,22 @@ function App() {
           </Grid>
           <Grid item xs>
             <Header />
-            <Switch>
-              <Route path='/' exact>
-                <Resume />
-              </Route>
-              <Route path='/portfolio'>
-                <Portfolio />
-              </Route>
-            </Switch>
+            <div className='content container_shadow'>
+              <Switch>
+                <Route path='/' exact>
+                  <AboutMe />
+                </Route>
+                <Route path='/resume'>
+                  <Resume />
+                </Route>
+                <Route path='/portfolio'>
+                  <Portfolio />
+                </Route>
+                <Route path='/contact'>
+                  <Contact />
+                </Route>
+              </Switch>
+            </div>
             <Footer />
           </Grid>
         </Grid>

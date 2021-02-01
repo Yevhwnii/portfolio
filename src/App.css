@@ -18,3 +18,34 @@
   -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
   -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
 }
+
+.content {
+  background-color: #fff;
+  min-height: 65vh;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  padding: 30px;
+}
+
+.section_title {
+  position: relative;
+  display: inline-block;
+  padding: 0 3px;
+}
+
+.section_title > h6 {
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  margin: 0;
+}
+
+.section_title span {
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: 0.4;
+  background-color: var(--main-color);
+}

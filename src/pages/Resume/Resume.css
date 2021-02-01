@@ -1,0 +1,16 @@
+/* Timelines */
+.timeline_content .timeline_title {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Encode Sans', sans-serif !important;
+}
+.timeline_content .timeline_date {
+  color: darkslategray;
+  font-family: 'Encode Sans', sans-serif !important;
+}
+.timeline_content .timeline_description {
+  color: gray;
+  font-size: small;
+  font-family: 'Encode Sans', sans-serif !important;
+  margin-top: 6px;
+}

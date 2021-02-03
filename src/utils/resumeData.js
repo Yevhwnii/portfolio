@@ -101,7 +101,7 @@ export const educationTimeline = [
     title: 'High School',
     date: '2014 - 2017',
     description:
-      'Reqular school, where I was introduced to Informatics and studied other common subjects ',
+      'Reqular school, where I was introduced to Informatics and studied other general subjects ',
   },
 ];
 
@@ -265,6 +265,79 @@ export const mySkills = [
         progress: 95,
       },
     ],
+  },
+];
+
+export const portfolioTabs = [
+  {
+    tag: 'Front-end',
+    outerImage: require('../assets/images/twitterLogo.jpg').default,
+    image: require('../assets/images/twitter.jpg').default,
+    title: 'Twitter clone (front-end)',
+    caption: 'Front-end part of my twitter clone using MERN stack',
+    desc:
+      'I tried to implement by myself Twitter and its core functionalities. Among which are: UI of the Twitter as close as possible, CRUD actions on tweets, comments, topics. The reason behind this project for me, is to play with new technologies and improve my existing skills. Stack of technologies I used can be found on GitHub page (link down below).',
+    link: 'https://github.com/Yevhwnii/twitter-mern-frontend',
+  },
+  {
+    tag: 'Back-end',
+    outerImage: require('../assets/images/twitterLogo.jpg').default,
+    image: require('../assets/images/twitter.jpg').default,
+    title: 'Twitter clone (back-end)',
+    caption: 'Back-end part of my twitter clone using MERN stack',
+    desc:
+      'I tried to implement by myself Twitter and its core functionalities. In server part of the application, I tried to supply all required endpoints for my front-end to work properly. I implemented authentication using passportJs, CRUD operation on tweets, route guards, validation of user input, e-mail verification and few more. That was quite fun experience!',
+    link: 'https://github.com/Yevhwnii/twitter-mern-backend',
+  },
+  {
+    tag: 'Front-end',
+    outerImage: require('../assets/images/dollaLogo.jpg').default,
+    image: require('../assets/images/dolla.png').default,
+    title: 'Virtual banking landing page',
+    caption: 'Landing page for potential virtual banking business',
+    desc:
+      'I created this landing page after I found some inspiration from the mockup. Also, I decided to try out Styled Components and react-scroll libraries. I have figured out how to use them together to create some fancy looking UI.',
+    link: 'https://github.com/Yevhwnii/react-smooth-scroll',
+  },
+  {
+    tag: 'Front-end',
+    outerImage: require('../assets/images/chairLogo.jpg').default,
+    image: require('../assets/images/chair.jpg').default,
+    title: 'Chair shop landing page',
+    caption: 'Landing page for potential chair selling business',
+    desc:
+      'Landing page for shop that is selling chairs. Mostly, I created this landing page in order to play around with react-three-fiber library which is wrapper around Three.js and allows to inject 3D models into browser.',
+    link: 'https://github.com/Yevhwnii/react-threejs-landing-page',
+  },
+  {
+    tag: 'FullStack',
+    outerImage: require('../assets/images/diplomaLogo.jpg').default,
+    image: require('../assets/images/diploma.jpg').default,
+    title: 'Restaurant finder',
+    caption: 'Application that can help people find place for meal',
+    desc:
+      'I created this application for my Engineer Thesis. This application allows user to find restaurant on the map and then have a quick glance on its menu and prices. That may help someone to choose place for meal based on his budget. Though, application has still a lot of ways to improve.',
+    link: 'https://github.com/Yevhwnii/diploma-frontend',
+  },
+  {
+    tag: 'FullStack',
+    outerImage: require('../assets/images/travelLogLogo.jpg').default,
+    image: require('../assets/images/travelLog.jpg').default,
+    title: 'Travel Log',
+    caption: 'Travel log application',
+    desc:
+      'This application allows to mark location where person has been already simply by double clicking on the map. I created this application to play around with MapBox and how I can configure it and then use.',
+    link: 'https://github.com/Yevhwnii/mern-travel-log',
+  },
+  {
+    tag: 'Front-end',
+    outerImage: require('../assets/images/trackerLogo.jpg').default,
+    image: require('../assets/images/tracker.jpg').default,
+    title: 'COVID tracker',
+    caption: 'COVID tracking application based on covid19.mathdro API',
+    desc:
+      'This is simple, COVID tracking application. During the development, I was trying to discover how to work with charts in React. I hope I was successful.',
+    link: 'https://github.com/Yevhwnii/covidtracker',
   },
 ];
 

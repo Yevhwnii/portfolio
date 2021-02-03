@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Grid } from '@material-ui/core';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Profile from './components/Profile';
 import Footer from './components/Footer';
@@ -27,7 +27,7 @@ function App() {
                 <Route path='/' exact>
                   <AboutMe />
                 </Route>
-                <Route path='/resume'>
+                <Route path='/experience'>
                   <Resume />
                 </Route>
                 <Route path='/portfolio'>
@@ -36,6 +36,7 @@ function App() {
                 <Route path='/contact'>
                   <Contact />
                 </Route>
+                <Redirect to='/' />
               </Switch>
             </div>
             <Footer />

@@ -1,0 +1,90 @@
+/* Tabs */
+.portfolio_tabs {
+  margin-bottom: 20px;
+}
+
+.portfolio_tabs .MuiTabs-indicator {
+  background-color: transparent !important;
+}
+
+.portfolio_tabs .active {
+  color: var(--main-color) !important;
+}
+
+.portfolio_tab {
+  padding: 0px !important;
+  min-width: 0px !important;
+  margin-right: 20px !important;
+  text-transform: inherit;
+  font-size: 14px !important;
+  font-weight: 400;
+  outline-width: 0px !important;
+}
+
+/* Cards */
+.portfolio_projects_card {
+  height: 100%;
+  max-width: 350px;
+  box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important;
+  border-radius: 5px;
+  overflow: hidden;
+  outline-width: 0px !important;
+}
+
+.portfolio_projects_card_image {
+  height: 140px;
+}
+
+.portfolio_projects_card_title {
+  font-weight: 500;
+}
+
+.portfolio_projects_card_caption {
+  color: grey;
+  font-weight: 400;
+}
+
+/* Dialog */
+.portfolio_dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 800px;
+}
+
+.portfolio_dialog_image {
+  min-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.portfolio_dialog_desc {
+  margin-top: 10px !important;
+}
+
+.portfolio_dialog_actions {
+  justify-content: center !important;
+  margin-bottom: 10px;
+}
+
+.portfolio_dialog_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: darkslategray;
+  margin: 0px 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.portfolio_dialog_icon:hover {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.portfolio_dialog_icon > .MuiSvgIcon-root {
+  font-size: 30px !important;
+}

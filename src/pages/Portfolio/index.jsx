@@ -28,32 +28,35 @@ const Portfolio = () => {
 
   const ProjectDialog = () => {
     return (
-      <Dialog
-        className='portfolio_dialog'
-        open={showDialog}
-        onClose={() => setShowDialog(false)}>
-        <DialogTitle>{projectDialog.title}</DialogTitle>
-        <img
-          className='portfolio_dialog_image'
-          alt={projectDialog.title}
-          src={projectDialog.image}
-        />
-        <DialogContent>
-          <Typography className='portfolio_dialog_desc'>
-            {projectDialog.desc}
-          </Typography>
-        </DialogContent>
-        <DialogActions className='portfolio_dialog_actions'>
-          <a
-            href={projectDialog.link}
-            target='_blank'
-            rel='noreferrer'
-            className='portfolio_dialog_icon'>
-            <GitHubIcon />
-            <Typography style={{ marginTop: 5 }}>Source Code</Typography>
-          </a>
-        </DialogActions>
-      </Dialog>
+      <Grid item xs={12}>
+        <Dialog
+          maxWidth='md'
+          className='portfolio_dialog'
+          open={showDialog}
+          onClose={() => setShowDialog(false)}>
+          <DialogTitle>{projectDialog.title}</DialogTitle>
+          <img
+            className='portfolio_dialog_image'
+            alt={projectDialog.title}
+            src={projectDialog.image}
+          />
+          <DialogContent>
+            <Typography className='portfolio_dialog_desc'>
+              {projectDialog.desc}
+            </Typography>
+          </DialogContent>
+          <DialogActions className='portfolio_dialog_actions'>
+            <a
+              href={projectDialog.link}
+              target='_blank'
+              rel='noreferrer'
+              className='portfolio_dialog_icon'>
+              <GitHubIcon />
+              <Typography style={{ marginTop: 5 }}>Source Code</Typography>
+            </a>
+          </DialogActions>
+        </Dialog>
+      </Grid>
     );
   };
 
@@ -117,7 +120,7 @@ const Portfolio = () => {
                         <CardActionArea>
                           <CardMedia
                             className='portfolio_projects_card_image'
-                            image={project.image}
+                            image={project.outerImage}
                             title={project.title}
                           />
                           <CardContent>

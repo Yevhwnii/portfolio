@@ -12,7 +12,7 @@ const SkillGraph = ({ title, tech }) => {
       <Grid className='graph_container' item>
         {tech.map((technology) => {
           return (
-            <div className='graph_wrapper'>
+            <div key={technology.name} className='graph_wrapper'>
               <Typography className='graph_name' variant='body2'>
                 {technology.name}
               </Typography>

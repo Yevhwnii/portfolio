@@ -12,6 +12,8 @@ import Contact from './pages/Contact';
 
 import './App.css';
 
+// Show CV to CV uploaded
+
 function App() {
   return (
     <>

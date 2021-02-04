@@ -3,6 +3,17 @@
   background-color: #fff;
   padding: 0px 22px 0px 0px !important;
   border-radius: 6px !important;
+  opacity: 0;
+}
+
+.header_anim {
+  background-color: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 
 .header .header_homeLink {
@@ -48,4 +59,20 @@
 .header .header_right {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 990px) {
+  .header .header_left {
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header .header_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+  }
 }

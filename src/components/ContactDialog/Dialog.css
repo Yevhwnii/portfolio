@@ -1,0 +1,19 @@
+.contact_dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  min-width: 800px;
+}
+
+.contact_dialog .MuiDialog-paper {
+  min-height: 150px;
+}
+
+.contact_dialog .MuiDialogTitle-root {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.contact_dialog_desc {
+  margin-top: 10px !important;
+}

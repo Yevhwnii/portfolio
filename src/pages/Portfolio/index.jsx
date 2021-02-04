@@ -18,13 +18,12 @@ import {
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 import { portfolioTabs } from '../../utils/resumeData';
+import FadeDiv from '../../components/Fade';
 
 const Portfolio = () => {
   const [tabValue, setTabValue] = useState('All');
   const [projectDialog, setProjectDialog] = useState(null);
   const [showDialog, setShowDialog] = useState(false);
-
-  console.log(tabValue);
 
   const ProjectDialog = () => {
     return (
@@ -63,41 +62,42 @@ const Portfolio = () => {
   return (
     <Grid container className='section' style={{ marginBottom: 30 }}>
       {/* Title */}
-      <Grid item className='section_title' style={{ marginBottom: 30 }}>
-        <span></span>
-        <h6>Portfolio</h6>
-      </Grid>
+      <FadeDiv>
+        <Grid item className='section_title' style={{ marginBottom: 30 }}>
+          <span></span>
+          <h6>Portfolio</h6>
+        </Grid>
 
-      {/* Tabs */}
-      <Grid item xs={12}>
-        <Tabs
-          value={tabValue}
-          className='portfolio_tabs'
-          onChange={(_, newValue) => setTabValue(newValue)}>
-          <Tab
-            label='All'
-            value='All'
-            disableRipple
-            className={
-              tabValue === 'All' ? 'portfolio_tab active' : 'portfolio_tab'
-            }
-          />
-          {[...new Set(portfolioTabs.map((item) => item.tag))].map((tag) => {
-            console.log(tabValue === tag);
-            return (
-              <Tab
-                label={tag}
-                value={tag}
-                disableRipple
-                className={
-                  tabValue === tag ? 'portfolio_tab active' : 'portfolio_tab'
-                }
-              />
-            );
-          })}
-        </Tabs>
-      </Grid>
-
+        {/* Tabs */}
+        <Grid item xs={12}>
+          <Tabs
+            value={tabValue}
+            className='portfolio_tabs'
+            onChange={(_, newValue) => setTabValue(newValue)}>
+            <Tab
+              label='All'
+              value='All'
+              disableRipple
+              className={
+                tabValue === 'All' ? 'portfolio_tab active' : 'portfolio_tab'
+              }
+            />
+            {[...new Set(portfolioTabs.map((item) => item.tag))].map((tag) => {
+              return (
+                <Tab
+                  key={tag}
+                  label={tag}
+                  value={tag}
+                  disableRipple
+                  className={
+                    tabValue === tag ? 'portfolio_tab active' : 'portfolio_tab'
+                  }
+                />
+              );
+            })}
+          </Tabs>
+        </Grid>
+      </FadeDiv>
       {/* Projects */}
       <Grid item xs={12}>
         <Grid

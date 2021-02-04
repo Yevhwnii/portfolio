@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { TweenMax, Power3 } from 'gsap';
 import './Profile.css';
 import { Typography } from '@material-ui/core';
 import TimelineItem from '@material-ui/lab/TimelineItem';
@@ -36,9 +37,28 @@ const ProfileTimelineItem = ({ title, link, text, icon }) => {
 };
 
 const Profile = () => {
+  const containerRef = useRef();
+  const animRef = useRef();
+  const infoSectionRef = useRef();
+
+  useEffect(() => {
+    TweenMax.from(containerRef.current, 3, {
+      height: 0,
+      ease: Power3.easeOut,
+    });
+    TweenMax.to(animRef.current, 3, {
+      height: 0,
+      ease: Power3.easeOut,
+    });
+    TweenMax.to(infoSectionRef.current, 3, {
+      opacity: 1,
+    }).delay(2);
+  }, []);
+
   return (
     <>
-      <div className='profile container_shadow'>
+      <div ref={containerRef} className='profile container_shadow'>
+        <div ref={animRef} className='profile_anim'></div>
         <div className='profile_name'>
           <Typography className='name'>{resume.name}</Typography>
           <Typography className='title'>{resume.title}</Typography>
@@ -51,7 +71,7 @@ const Profile = () => {
           />
         </figure>
 
-        <div className='profile_information'>
+        <div ref={infoSectionRef} className='profile_information'>
           <CustomTimeLine icon={<PersonIcon />}>
             {Object.values(profileTimeline).map((el) => {
               return (

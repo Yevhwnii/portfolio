@@ -42,3 +42,8 @@
   margin-right: 5px;
   margin-left: 5px;
 }
+
+.custom_btn .btn_link {
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none !important;
+}

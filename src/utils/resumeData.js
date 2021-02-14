@@ -58,7 +58,7 @@ export const profileTimeline = {
   },
   email: {
     title: 'E-mail',
-    text: 'mirandoos3223@gmail.com',
+    text: 'yevhenii.moiseienko@gmail.com',
   },
   job: {
     title: 'Current job',

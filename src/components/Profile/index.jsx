@@ -94,7 +94,7 @@ const Profile = () => {
           <div className='profile_buttonWrapper'>
             <CustomBtn
               text='Show CV'
-              linkTo='https://pdfhost.io/v/n4lJpFZMb_CVpdf.pdf'
+              linkTo='https://pdfhost.io/v/wOyHo33fg_Moiseienko_Yevhenii_CVpdf.pdf'
               icon={<ButtonIcon />}
             />
           </div>

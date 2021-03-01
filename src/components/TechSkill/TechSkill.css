@@ -1,0 +1,35 @@
+.techSkill_container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.techSkill_container .techSkill_wrapper {
+  display: flex;
+  align-items: center;
+  margin: 5px 0px;
+}
+
+.techSkill_container .image_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  height: 48px;
+  width: 48px;
+  object-position: center center;
+}
+
+.techSkill_container .image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.techSkill_container .skills_name {
+  padding-left: 15px;
+}
+
+.techSkill_container .skills_name p {
+  font-size: 1.1rem;
+}

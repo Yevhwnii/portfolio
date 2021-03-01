@@ -4,8 +4,8 @@ import { Grid, Typography } from '@material-ui/core';
 
 import resume, { myServices, mySkills } from '../../utils/resumeData';
 import Card from '../../components/Card';
-import SkillGraph from '../../components/SkillGraph';
 import FadeDiv from '../../components/Fade';
+import TechSkill from '../../components/TechSkill';
 
 const AboutMe = () => {
   return (
@@ -47,6 +47,7 @@ const AboutMe = () => {
           </Grid>
         </Grid>
         {/* My skills */}
+
         <Grid
           container
           justify='space-between'
@@ -56,7 +57,7 @@ const AboutMe = () => {
           {mySkills.map((skill) => {
             return (
               <Grid key={Math.random()} item xs={12} sm={6}>
-                <SkillGraph title={skill.title} tech={skill.technologies} />
+                <TechSkill title={skill.title} tech={skill.technologies} />
               </Grid>
             );
           })}

@@ -130,140 +130,167 @@ export const mySkills = [
     title: 'Front-end',
     technologies: [
       {
-        name: 'ReactJs + Typescript',
-        progress: 82,
+        name: 'Javascript',
+        icon: require('../assets/icons/javascript.svg').default,
       },
       {
-        name: 'React core packages (react router, axios, etc.)',
-        progress: 78,
+        name: 'Typescript',
+        icon: require('../assets/icons/typescript.svg').default,
+      },
+
+      {
+        name: 'React',
+        icon: require('../assets/icons/react.svg').default,
       },
       {
-        name: 'Redux (redux-saga, redux-thunk, reselect, immer)',
-        progress: 70,
+        name: 'Redux',
+        icon: require('../assets/icons/redux.svg').default,
       },
       {
-        name: 'Material-UI (components + useStyles, themes)',
-        progress: 78,
+        name: 'RxJs',
+        icon: require('../assets/icons/rxjs.svg').default,
       },
       {
-        name: 'Styled components',
-        progress: 50,
+        name: 'Sass',
+        icon: require('../assets/icons/sass.svg').default,
       },
       {
-        name: 'Forms (react-hook-form)',
-        progress: 60,
+        name: 'Material-UI',
+        icon: require('../assets/icons/mui.svg').default,
       },
       {
-        name: 'Maps (react-map-gl, react-google-maps/api)',
-        progress: 62,
+        name: 'GSAP',
+        icon: require('../assets/icons/gsap.svg').default,
       },
-      {
-        name: 'Animations (GSAP, react-scroll)',
-        progress: 65,
-      },
-      {
-        name: '3D objects (react-three-fiber)',
-        progress: 35,
-      },
-      {
-        name: 'Web sockets (socket.io)',
-        progress: 30,
-      },
-      {
-        name: 'Unit tests (Jest, enzyme)',
-        progress: 20,
-      },
+      // {
+      //   name: 'Styled components',
+      //   progress: 50,
+      // },
+      // {
+      //   name: 'Forms (react-hook-form)',
+      //   progress: 60,
+      // },
+      // {
+      //   name: 'Maps (react-map-gl, react-google-maps/api)',
+      //   progress: 62,
+      // },
+
+      // {
+      //   name: '3D objects (react-three-fiber)',
+      //   progress: 35,
+      // },
+      // {
+      //   name: 'Web sockets (socket.io)',
+      //   progress: 30,
+      // },
+      // {
+      //   name: 'Unit tests (Jest, enzyme)',
+      //   progress: 20,
+      // },
     ],
   },
   {
     title: 'Back-end',
     technologies: [
       {
-        name: 'Node/Express + Typescript',
-        progress: 75,
+        name: 'Node/Express',
+        icon: require('../assets/icons/node.svg').default,
       },
       {
         name: 'NestJs',
-        progress: 60,
+        icon: require('../assets/icons/nest.svg').default,
       },
       {
-        name: 'ORMs (mongoose, typeorm)',
-        progress: 62,
+        name: 'Apollo',
+        icon: require('../assets/icons/apollo.svg').default,
       },
-      {
-        name: 'Authentication (passport and its strategies, related packages)',
-        progress: 70,
-      },
-      {
-        name: 'Validation (express-validator, NestJs`s pipes)',
-        progress: 72,
-      },
-      {
-        name: 'E-mails (nodemailer)',
-        progress: 50,
-      },
-      {
-        name: 'File uploads (multer)',
-        progress: 45,
-      },
-      {
-        name: 'GraphQL (apollo)',
-        progress: 20,
-      },
-      {
-        name: 'Web sockets (socket.io, WebRTC)',
-        progress: 30,
-      },
-      {
-        name: 'Django',
-        progress: 20,
-      },
+      // {
+      //   name: 'ORMs (mongoose, typeorm)',
+      //   progress: 62,
+      // },
+      // {
+      //   name: 'Authentication (passport and its strategies, related packages)',
+      //   progress: 70,
+      // },
+      // {
+      //   name: 'Validation (express-validator, NestJs`s pipes)',
+      //   progress: 72,
+      // },
+      // {
+      //   name: 'E-mails (nodemailer)',
+      //   progress: 50,
+      // },
+      // {
+      //   name: 'File uploads (multer)',
+      //   progress: 45,
+      // },
+      // {
+      //   name: 'GraphQL (apollo)',
+      //   progress: 20,
+      // },
+      // {
+      //   name: 'Web sockets (socket.io, WebRTC)',
+      //   progress: 30,
+      // },
+      // {
+      //   name: 'Django',
+      //   progress: 20,
+      // },
     ],
   },
   {
-    title: 'Databases and Source Control',
+    title: 'Databases',
     technologies: [
       {
         name: 'MongoDB',
-        progress: 82,
-      },
-      {
-        name: 'Redis',
-        progress: 20,
+        icon: require('../assets/icons/mongo.svg').default,
       },
       {
         name: 'PostgreSQL',
-        progress: 60,
+        icon: require('../assets/icons/postgres.svg').default,
       },
-      {
-        name: 'MySQL',
-        progress: 55,
-      },
-      {
-        name: 'Git/GitHub',
-        progress: 75,
-      },
+
+      // {
+      //   name: 'Redis',
+      //   progress: 20,
+      // },
+      // {
+      //   name: 'PostgreSQL',
+      //   progress: 60,
+      // },
+      // {
+      //   name: 'MySQL',
+      //   progress: 55,
+      // },
+      // {
+      //   name: 'Git/GitHub',
+      //   progress: 75,
+      // },
     ],
   },
   {
-    title: 'Languages',
+    title: 'DevOps tools',
     technologies: [
       {
-        name: 'English',
-        progress: 85,
+        name: 'Git',
+        icon: require('../assets/icons/git.svg').default,
       },
       {
-        name: 'Polish',
-        progress: 75,
+        name: 'Docker',
+        icon: require('../assets/icons/docker.svg').default,
       },
-      {
-        name: 'Russian',
-        progress: 95,
-      },
-      {
-        name: 'Ukrainian',
-        progress: 95,
-      },
+      // {
+      //   name: 'Polish',
+      //   progress: 75,
+      // },
+      // {
+      //   name: 'Russian',
+      //   progress: 95,
+      // },
+      // {
+      //   name: 'Ukrainian',
+      //   progress: 95,
+      // },
     ],
   },
 ];

@@ -19,6 +19,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 import { portfolioTabs } from '../../utils/resumeData';
 import FadeDiv from '../../components/Fade';
+import Image from '../../assets/icons/react.svg';
 
 const Portfolio = () => {
   const [tabValue, setTabValue] = useState('All');
@@ -45,6 +46,16 @@ const Portfolio = () => {
             </Typography>
           </DialogContent>
           <DialogActions className='portfolio_dialog_actions'>
+            <div className='portfolio_techs'>
+              {projectDialog.techs.map((tech) => {
+                return (
+                  <div className='portfolio_techs_image'>
+                    <img src={tech.icon} alt={tech.name} title={tech.name} />
+                  </div>
+                );
+              })}
+            </div>
+
             <a
               href={projectDialog.link}
               target='_blank'

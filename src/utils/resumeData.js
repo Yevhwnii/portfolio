@@ -305,6 +305,22 @@ export const portfolioTabs = [
     desc:
       'I tried to implement by myself Twitter and its core functionalities. Among which are: UI of the Twitter as close as possible, CRUD actions on tweets, comments, topics. The reason behind this project for me, is to play with new technologies and improve my existing skills. Stack of technologies I used can be found on GitHub page (link down below).',
     link: 'https://github.com/Yevhwnii/twitter-mern-frontend',
+    techs: [
+      {
+        name: 'Typescript',
+        icon: require('../assets/icons/typescript.svg').default,
+      },
+      {
+        name: 'React',
+        icon: require('../assets/icons/react.svg').default,
+      },
+      {
+        name: 'Redux',
+        icon: require('../assets/icons/redux.svg').default,
+      },
+
+      { name: 'Material-UI', icon: require('../assets/icons/mui.svg').default },
+    ],
   },
   {
     tag: 'Back-end',
@@ -315,6 +331,14 @@ export const portfolioTabs = [
     desc:
       'I tried to implement by myself Twitter and its core functionalities. In server part of the application, I tried to supply all required endpoints for my front-end to work properly. I implemented authentication using passportJs, CRUD operation on tweets, route guards, validation of user input, e-mail verification and few more. That was quite fun experience!',
     link: 'https://github.com/Yevhwnii/twitter-mern-backend',
+    techs: [
+      {
+        name: 'Typescript',
+        icon: require('../assets/icons/typescript.svg').default,
+      },
+      { name: 'NodeJs', icon: require('../assets/icons/node.svg').default },
+      { name: 'MongoDB', icon: require('../assets/icons/mongo.svg').default },
+    ],
   },
   {
     tag: 'Front-end',
@@ -325,6 +349,14 @@ export const portfolioTabs = [
     desc:
       'I created this landing page after I found some inspiration from the mockup. Also, I decided to try out Styled Components and react-scroll libraries. I have figured out how to use them together to create some fancy looking UI.',
     link: 'https://github.com/Yevhwnii/react-smooth-scroll',
+    techs: [
+      {
+        name: 'React',
+        icon: require('../assets/icons/react.svg').default,
+      },
+      { name: 'Material-UI', icon: require('../assets/icons/mui.svg').default },
+      { name: 'GSAP', icon: require('../assets/icons/gsap.svg').default },
+    ],
   },
   {
     tag: 'Front-end',
@@ -335,6 +367,13 @@ export const portfolioTabs = [
     desc:
       'Landing page for shop that is selling chairs. Mostly, I created this landing page in order to play around with react-three-fiber library which is wrapper around Three.js and allows to inject 3D models into browser.',
     link: 'https://github.com/Yevhwnii/react-threejs-landing-page',
+    techs: [
+      {
+        name: 'React',
+        icon: require('../assets/icons/react.svg').default,
+      },
+      { name: 'ThreeJs', icon: require('../assets/icons/threejs.svg').default },
+    ],
   },
   {
     tag: 'FullStack',
@@ -345,6 +384,21 @@ export const portfolioTabs = [
     desc:
       'I created this application for my Engineer Thesis. This application allows user to find restaurant on the map and then have a quick glance on its menu and prices. That may help someone to choose place for meal based on his budget. Though, application has still a lot of ways to improve.',
     link: 'https://github.com/Yevhwnii/diploma-frontend',
+    techs: [
+      {
+        name: 'Typescript',
+        icon: require('../assets/icons/typescript.svg').default,
+      },
+      {
+        name: 'React',
+        icon: require('../assets/icons/react.svg').default,
+      },
+      { name: 'Material-UI', icon: require('../assets/icons/mui.svg').default },
+      { name: 'GSAP', icon: require('../assets/icons/gsap.svg').default },
+
+      { name: 'NodeJs', icon: require('../assets/icons/node.svg').default },
+      { name: 'MongoDB', icon: require('../assets/icons/mongo.svg').default },
+    ],
   },
   {
     tag: 'FullStack',
@@ -355,6 +409,14 @@ export const portfolioTabs = [
     desc:
       'This application allows to mark location where person has been already simply by double clicking on the map. I created this application to play around with MapBox and how I can configure it and then use.',
     link: 'https://github.com/Yevhwnii/mern-travel-log',
+    techs: [
+      {
+        name: 'React',
+        icon: require('../assets/icons/react.svg').default,
+      },
+      { name: 'NodeJs', icon: require('../assets/icons/node.svg').default },
+      { name: 'MongoDB', icon: require('../assets/icons/mongo.svg').default },
+    ],
   },
   {
     tag: 'Front-end',
@@ -365,6 +427,12 @@ export const portfolioTabs = [
     desc:
       'This is simple, COVID tracking application. During the development, I was trying to discover how to work with charts in React. I hope I was successful.',
     link: 'https://github.com/Yevhwnii/covidtracker',
+    techs: [
+      {
+        name: 'React',
+        icon: require('../assets/icons/react.svg').default,
+      },
+    ],
   },
 ];
 

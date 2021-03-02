@@ -19,7 +19,6 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 import { portfolioTabs } from '../../utils/resumeData';
 import FadeDiv from '../../components/Fade';
-import Image from '../../assets/icons/react.svg';
 
 const Portfolio = () => {
   const [tabValue, setTabValue] = useState('All');

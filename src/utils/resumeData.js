@@ -147,10 +147,6 @@ export const mySkills = [
         icon: require('../assets/icons/redux.svg').default,
       },
       {
-        name: 'RxJs',
-        icon: require('../assets/icons/rxjs.svg').default,
-      },
-      {
         name: 'Sass',
         icon: require('../assets/icons/sass.svg').default,
       },

@@ -5,6 +5,7 @@ import InstIcon from '@material-ui/icons/Instagram';
 import LearnIcon from '@material-ui/icons/EmojiObjectsOutlined';
 import CommunicationIcon from '@material-ui/icons/EmojiPeopleOutlined';
 import ReliableIcon from '@material-ui/icons/BeenhereOutlined';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const data = {
   name: 'Yevhenii Moiseienko',
@@ -17,6 +18,18 @@ const data = {
       text: 'Facebook',
       icon: (
         <FbIcon
+          style={{
+            color: '#4267B2',
+            fontSize: 18,
+          }}
+        />
+      ),
+    },
+    LinkedIn: {
+      link: 'https://www.linkedin.com/in/yevhenii-moiseienko-308191207/',
+      text: 'LinkedIn',
+      icon: (
+        <LinkedInIcon
           style={{
             color: '#4267B2',
             fontSize: 18,

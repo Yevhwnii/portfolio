@@ -64,6 +64,7 @@
 
 .timeline .timeline_wIcon {
   display: flex;
+  align-items: center;
   padding-top: 2px;
 }
 

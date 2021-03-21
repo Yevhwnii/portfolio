@@ -48,7 +48,7 @@ const Portfolio = () => {
             <div className='portfolio_techs'>
               {projectDialog.techs.map((tech) => {
                 return (
-                  <div className='portfolio_techs_image'>
+                  <div key={Math.random()} className='portfolio_techs_image'>
                     <img src={tech.icon} alt={tech.name} title={tech.name} />
                   </div>
                 );

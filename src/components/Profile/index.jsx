@@ -67,7 +67,7 @@ const Profile = () => {
         <figure className='profile_image'>
           <img
             alt='Avatar'
-            src='https://i.ibb.co/ZfXZMGs/photo-2021-01-28-19-06-15.jpg'
+            src={require('../../assets/images/profileImage.jpg').default}
           />
         </figure>
 

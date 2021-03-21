@@ -307,6 +307,36 @@ export const mySkills = [
 export const portfolioTabs = [
   {
     tag: 'Front-end',
+    outerImage: require('../assets/images/instagramLogo.jpg').default,
+    image: require('../assets/images/instagram.jpg').default,
+    title: 'Instagram clone',
+    caption: 'Instagram clone using React and Firebase',
+    desc:
+      'Initial idea of the project was to try out Tailwind CSS, play with Firebase, write tests using RTL, try out RxJs and RxFire, improve skills in React futhermore and of course, replicate some of the core functionalities of Instagram and its UI. Full list of technologies and replicated feature can be found on GitHub page. It may be still in development. ',
+    link: 'https://github.com/Yevhwnii/inst-clone',
+    techs: [
+      {
+        name: 'Typescript',
+        icon: require('../assets/icons/typescript.svg').default,
+      },
+      {
+        name: 'React',
+        icon: require('../assets/icons/react.svg').default,
+      },
+      {
+        name: 'Firebase',
+        icon: require('../assets/icons/firebase.svg').default,
+      },
+
+      {
+        name: 'TailwindCSS',
+        icon: require('../assets/icons/tailwind.svg').default,
+      },
+      { name: 'Jest', icon: require('../assets/icons/jest.svg').default },
+    ],
+  },
+  {
+    tag: 'Front-end',
     outerImage: require('../assets/images/twitterLogo.jpg').default,
     image: require('../assets/images/twitter.jpg').default,
     title: 'Twitter clone (front-end)',
@@ -350,6 +380,31 @@ export const portfolioTabs = [
     ],
   },
   {
+    tag: 'FullStack',
+    outerImage: require('../assets/images/diplomaLogo.jpg').default,
+    image: require('../assets/images/diploma.jpg').default,
+    title: 'Restaurant finder',
+    caption: 'Application that can help people find place for meal',
+    desc:
+      'I created this application for my Engineer Thesis. This application allows user to find restaurant on the map and then have a quick glance on its menu and prices. That may help someone to choose place for meal based on his budget. Though, application has still a lot of ways to improve.',
+    link: 'https://github.com/Yevhwnii/diploma-frontend',
+    techs: [
+      {
+        name: 'Typescript',
+        icon: require('../assets/icons/typescript.svg').default,
+      },
+      {
+        name: 'React',
+        icon: require('../assets/icons/react.svg').default,
+      },
+      { name: 'Material-UI', icon: require('../assets/icons/mui.svg').default },
+      { name: 'GSAP', icon: require('../assets/icons/gsap.svg').default },
+
+      { name: 'NodeJs', icon: require('../assets/icons/node.svg').default },
+      { name: 'MongoDB', icon: require('../assets/icons/mongo.svg').default },
+    ],
+  },
+  {
     tag: 'Front-end',
     outerImage: require('../assets/images/dollaLogo.jpg').default,
     image: require('../assets/images/dolla.png').default,
@@ -384,31 +439,7 @@ export const portfolioTabs = [
       { name: 'ThreeJs', icon: require('../assets/icons/threejs.svg').default },
     ],
   },
-  {
-    tag: 'FullStack',
-    outerImage: require('../assets/images/diplomaLogo.jpg').default,
-    image: require('../assets/images/diploma.jpg').default,
-    title: 'Restaurant finder',
-    caption: 'Application that can help people find place for meal',
-    desc:
-      'I created this application for my Engineer Thesis. This application allows user to find restaurant on the map and then have a quick glance on its menu and prices. That may help someone to choose place for meal based on his budget. Though, application has still a lot of ways to improve.',
-    link: 'https://github.com/Yevhwnii/diploma-frontend',
-    techs: [
-      {
-        name: 'Typescript',
-        icon: require('../assets/icons/typescript.svg').default,
-      },
-      {
-        name: 'React',
-        icon: require('../assets/icons/react.svg').default,
-      },
-      { name: 'Material-UI', icon: require('../assets/icons/mui.svg').default },
-      { name: 'GSAP', icon: require('../assets/icons/gsap.svg').default },
 
-      { name: 'NodeJs', icon: require('../assets/icons/node.svg').default },
-      { name: 'MongoDB', icon: require('../assets/icons/mongo.svg').default },
-    ],
-  },
   {
     tag: 'FullStack',
     outerImage: require('../assets/images/travelLogLogo.jpg').default,

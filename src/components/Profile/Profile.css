@@ -38,7 +38,7 @@
 
 .profile_image {
   margin-top: -10px;
-  min-height: 335px;
+  min-height: 295px;
   -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
   clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
 }

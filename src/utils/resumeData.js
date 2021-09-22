@@ -9,7 +9,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const data = {
   name: 'Yevhenii Moiseienko',
-  title: 'Junior Fullstack Developer',
+  title: 'Fullstack Developer',
   aboutMe: `Hi! Glad to see you here, here is small section that introduces me.\n\n  My name is Yevhenii Moiseienko, I originate from Ukraine. After finishing my school, I decided to change something in my life and went for study to Poland. I finished Engineer Degree in WSEI, Lublin and currently I am studying Master Degree there. I feel like I fell in love with React and hope I will not break up with it :).`,
 
   socials: {
@@ -75,7 +75,7 @@ export const profileTimeline = {
   },
   job: {
     title: 'Current job',
-    text: 'Student',
+    text: 'React / Angular Frontend Developer',
   },
   phone: {
     title: 'Phone number',
@@ -84,6 +84,12 @@ export const profileTimeline = {
 };
 
 export const workTimeline = [
+  {
+    title: 'Delivence, Frontend Developer',
+    date: '03/2021-Currently',
+    description:
+      'Main responsibilities are creation of good-looking, responsive and user-friendly UIs, filling them with logic required by the project, using the most modern technologies available ( NextJs, RTK, Angular, etc. ). Challenges, deadlines, brainstorms are included out-the-box.',
+  },
   {
     title: '"Zwyczajny obiad" Startup Internship',
     date: '02/2020-05/2020',
@@ -142,10 +148,10 @@ export const mySkills = [
   {
     title: 'Front-end',
     technologies: [
-      {
-        name: 'Javascript',
-        icon: require('../assets/icons/javascript.svg').default,
-      },
+      // {
+      //   name: 'Javascript',
+      //   icon: require('../assets/icons/javascript.svg').default,
+      // },
       {
         name: 'Typescript',
         icon: require('../assets/icons/typescript.svg').default,
@@ -156,7 +162,11 @@ export const mySkills = [
         icon: require('../assets/icons/react.svg').default,
       },
       {
-        name: 'Redux',
+        name: 'NextJs',
+        icon: require('../assets/icons/nextjs.svg').default,
+      },
+      {
+        name: 'Redux / RTK',
         icon: require('../assets/icons/redux.svg').default,
       },
       {
@@ -209,10 +219,10 @@ export const mySkills = [
         name: 'NestJs',
         icon: require('../assets/icons/nest.svg').default,
       },
-      {
-        name: 'Apollo',
-        icon: require('../assets/icons/apollo.svg').default,
-      },
+      // {
+      //   name: 'Apollo',
+      //   icon: require('../assets/icons/apollo.svg').default,
+      // },
       // {
       //   name: 'ORMs (mongoose, typeorm)',
       //   progress: 62,
@@ -311,8 +321,7 @@ export const portfolioTabs = [
     image: require('../assets/images/instagram.jpg').default,
     title: 'Instagram clone',
     caption: 'Instagram clone using React and Firebase',
-    desc:
-      'Initial idea of the project was to try out Tailwind CSS, play with Firebase, write tests using RTL, try out RxJs and RxFire, improve skills in React futhermore and of course, replicate some of the core functionalities of Instagram and its UI. Full list of technologies and replicated feature can be found on GitHub page. It may be still in development. ',
+    desc: 'Initial idea of the project was to try out Tailwind CSS, play with Firebase, write tests using RTL, try out RxJs and RxFire, improve skills in React futhermore and of course, replicate some of the core functionalities of Instagram and its UI. Full list of technologies and replicated feature can be found on GitHub page. It may be still in development. ',
     link: 'https://github.com/Yevhwnii/inst-clone',
     techs: [
       {
@@ -341,8 +350,7 @@ export const portfolioTabs = [
     image: require('../assets/images/twitter.jpg').default,
     title: 'Twitter clone (front-end)',
     caption: 'Front-end part of my twitter clone using MERN stack',
-    desc:
-      'I tried to implement by myself Twitter and its core functionalities. Among which are: UI of the Twitter as close as possible, CRUD actions on tweets, comments, topics. The reason behind this project for me, is to play with new technologies and improve my existing skills. Stack of technologies I used can be found on GitHub page (link down below).',
+    desc: 'I tried to implement by myself Twitter and its core functionalities. Among which are: UI of the Twitter as close as possible, CRUD actions on tweets, comments, topics. The reason behind this project for me, is to play with new technologies and improve my existing skills. Stack of technologies I used can be found on GitHub page (link down below).',
     link: 'https://github.com/Yevhwnii/twitter-mern-frontend',
     techs: [
       {
@@ -367,8 +375,7 @@ export const portfolioTabs = [
     image: require('../assets/images/twitter.jpg').default,
     title: 'Twitter clone (back-end)',
     caption: 'Back-end part of my twitter clone using MERN stack',
-    desc:
-      'I tried to implement by myself Twitter and its core functionalities. In server part of the application, I tried to supply all required endpoints for my front-end to work properly. I implemented authentication using passportJs, CRUD operation on tweets, route guards, validation of user input, e-mail verification and few more. That was quite fun experience!',
+    desc: 'I tried to implement by myself Twitter and its core functionalities. In server part of the application, I tried to supply all required endpoints for my front-end to work properly. I implemented authentication using passportJs, CRUD operation on tweets, route guards, validation of user input, e-mail verification and few more. That was quite fun experience!',
     link: 'https://github.com/Yevhwnii/twitter-mern-backend',
     techs: [
       {
@@ -385,8 +392,7 @@ export const portfolioTabs = [
     image: require('../assets/images/diploma.jpg').default,
     title: 'Restaurant finder',
     caption: 'Application that can help people find place for meal',
-    desc:
-      'I created this application for my Engineer Thesis. This application allows user to find restaurant on the map and then have a quick glance on its menu and prices. That may help someone to choose place for meal based on his budget. Though, application has still a lot of ways to improve.',
+    desc: 'I created this application for my Engineer Thesis. This application allows user to find restaurant on the map and then have a quick glance on its menu and prices. That may help someone to choose place for meal based on his budget. Though, application has still a lot of ways to improve.',
     link: 'https://github.com/Yevhwnii/diploma-frontend',
     techs: [
       {
@@ -410,8 +416,7 @@ export const portfolioTabs = [
     image: require('../assets/images/dolla.png').default,
     title: 'Virtual banking landing page',
     caption: 'Landing page for potential virtual banking business',
-    desc:
-      'I created this landing page after I found some inspiration from the mockup. Also, I decided to try out Styled Components and react-scroll libraries. I have figured out how to use them together to create some fancy looking UI.',
+    desc: 'I created this landing page after I found some inspiration from the mockup. Also, I decided to try out Styled Components and react-scroll libraries. I have figured out how to use them together to create some fancy looking UI.',
     link: 'https://github.com/Yevhwnii/react-smooth-scroll',
     techs: [
       {
@@ -428,8 +433,7 @@ export const portfolioTabs = [
     image: require('../assets/images/chair.jpg').default,
     title: 'Chair shop landing page',
     caption: 'Landing page for potential chair selling business',
-    desc:
-      'Landing page for shop that is selling chairs. Mostly, I created this landing page in order to play around with react-three-fiber library which is wrapper around Three.js and allows to inject 3D models into browser.',
+    desc: 'Landing page for shop that is selling chairs. Mostly, I created this landing page in order to play around with react-three-fiber library which is wrapper around Three.js and allows to inject 3D models into browser.',
     link: 'https://github.com/Yevhwnii/react-threejs-landing-page',
     techs: [
       {
@@ -446,8 +450,7 @@ export const portfolioTabs = [
     image: require('../assets/images/travelLog.jpg').default,
     title: 'Travel Log',
     caption: 'Travel log application',
-    desc:
-      'This application allows to mark location where person has been already simply by double clicking on the map. I created this application to play around with MapBox and how I can configure it and then use.',
+    desc: 'This application allows to mark location where person has been already simply by double clicking on the map. I created this application to play around with MapBox and how I can configure it and then use.',
     link: 'https://github.com/Yevhwnii/mern-travel-log',
     techs: [
       {
@@ -464,8 +467,7 @@ export const portfolioTabs = [
     image: require('../assets/images/tracker.jpg').default,
     title: 'COVID tracker',
     caption: 'COVID tracking application based on covid19.mathdro API',
-    desc:
-      'This is simple, COVID tracking application. During the development, I was trying to discover how to work with charts in React. I hope I was successful.',
+    desc: 'This is simple, COVID tracking application. During the development, I was trying to discover how to work with charts in React. I hope I was successful.',
     link: 'https://github.com/Yevhwnii/covidtracker',
     techs: [
       {

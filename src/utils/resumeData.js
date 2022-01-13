@@ -1,61 +1,61 @@
-import React from 'react';
-import FbIcon from '@material-ui/icons/Facebook';
-import GithubIcon from '@material-ui/icons/GitHub';
-import InstIcon from '@material-ui/icons/Instagram';
-import LearnIcon from '@material-ui/icons/EmojiObjectsOutlined';
-import CommunicationIcon from '@material-ui/icons/EmojiPeopleOutlined';
-import ReliableIcon from '@material-ui/icons/BeenhereOutlined';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import React from "react";
+import FbIcon from "@material-ui/icons/Facebook";
+import GithubIcon from "@material-ui/icons/GitHub";
+import InstIcon from "@material-ui/icons/Instagram";
+import LearnIcon from "@material-ui/icons/EmojiObjectsOutlined";
+import CommunicationIcon from "@material-ui/icons/EmojiPeopleOutlined";
+import ReliableIcon from "@material-ui/icons/BeenhereOutlined";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 const data = {
-  name: 'Yevhenii Moiseienko',
-  title: 'Fullstack Developer',
+  name: "Yevhenii Moiseienko",
+  title: "Fullstack Developer",
   aboutMe: `Hi! Glad to see you here, here is small section that introduces me.\n\n  My name is Yevhenii Moiseienko, I originate from Ukraine. After finishing my school, I decided to change something in my life and went for study to Poland. I finished Engineer Degree in WSEI, Lublin and currently I am studying Master Degree there. I feel like I fell in love with React and hope I will not break up with it :).`,
 
   socials: {
     Facebook: {
-      link: 'https://www.facebook.com/zheka.breiter.5',
-      text: 'Facebook',
+      link: "https://www.facebook.com/zheka.breiter.5",
+      text: "Facebook",
       icon: (
         <FbIcon
           style={{
-            color: '#4267B2',
+            color: "#4267B2",
             fontSize: 18,
           }}
         />
       ),
     },
     LinkedIn: {
-      link: 'https://www.linkedin.com/in/yevhenii-moiseienko-308191207/',
-      text: 'LinkedIn',
+      link: "https://www.linkedin.com/in/yevhenii-moiseienko-308191207/",
+      text: "LinkedIn",
       icon: (
         <LinkedInIcon
           style={{
-            color: '#4267B2',
+            color: "#4267B2",
             fontSize: 18,
           }}
         />
       ),
     },
     Instagram: {
-      link: 'https://www.instagram.com/mirandoo_/',
-      text: 'Instagram',
+      link: "https://www.instagram.com/mirandoo_/",
+      text: "Instagram",
       icon: (
         <InstIcon
           style={{
-            color: '#F77737',
+            color: "#F77737",
             fontSize: 18,
           }}
         />
       ),
     },
     Github: {
-      link: 'https://github.com/Yevhwnii',
-      text: 'Github',
+      link: "https://github.com/Yevhwnii",
+      text: "Github",
       icon: (
         <GithubIcon
           style={{
-            color: 'black',
+            color: "black",
             fontSize: 18,
           }}
         />
@@ -66,121 +66,121 @@ const data = {
 
 export const profileTimeline = {
   birthday: {
-    title: 'Birthday',
-    text: '02.06.2000',
+    title: "Birthday",
+    text: "02.06.2000",
   },
   email: {
-    title: 'E-mail',
-    text: 'yevhenii.moiseienko@gmail.com',
+    title: "E-mail",
+    text: "yevhenii.moiseienko@gmail.com",
   },
   job: {
-    title: 'Current job',
-    text: 'React / Angular Frontend Developer',
+    title: "Current job",
+    text: "React / Angular Frontend Developer",
   },
   phone: {
-    title: 'Phone number',
-    text: '+48 577 725 625',
+    title: "Phone number",
+    text: "+48 577 725 625",
   },
 };
 
 export const workTimeline = [
   {
-    title: 'Delivence, Frontend Developer',
-    date: '03/2021-Currently',
+    title: "Delivence, Frontend Developer",
+    date: "02/2021-Currently",
     description:
-      'Main responsibilities are creation of good-looking, responsive and user-friendly UIs, filling them with logic required by the project, using the most modern technologies available ( NextJs, RTK, Angular, etc. ). Challenges, deadlines, brainstorms are included out-the-box.',
+      "Creating front-end web applications, architecting and projecting whole structure of application, providing good UX to the end-user, choosing technologies which help achieve goals, meeting project requirements and client expectations. Received a lot of experience in in React/NextJs ecosystems, team cooperation, working with clients. Mostly worked in duo with back-end college, which gave me a lot of experience of creating and managing projects by myself.",
   },
   {
     title: '"Zwyczajny obiad" Startup Internship',
-    date: '02/2020-05/2020',
+    date: "02/2020-05/2020",
     description:
       'Main responsibilities were creation of CRM system for mobile application "Zwyczajny obiad" using React and its underlying packages. During that internships, I have got a lot of experience from other developers in different aspects of Web Development.',
   },
   {
-    title: 'Venture Devs Internship',
-    date: '01/2019 - 04/2019',
+    title: "Venture Devs Internship",
+    date: "01/2019 - 04/2019",
     description:
-      'Main responsibilities were creation of API endpoints based on requirement using Django framework.',
+      "Main responsibilities were creation of API endpoints based on requirement using Django framework.",
   },
 ];
 export const educationTimeline = [
   {
-    title: 'Computer Science, 2st Degree, WSEI, Lublin',
-    date: '2020 - Present',
+    title: "Computer Science, 2st Degree, WSEI, Lublin",
+    date: "2020 - Present",
     description:
-      'Currently, I am continuing my study at the same University to get Master Degree in Computer Science',
+      "Currently, I am continuing my study at the same University to get Master Degree in Computer Science",
   },
   {
-    title: 'Computer Science, 1st Degree, WSEI, Lublin',
-    date: '2017 - 2020',
+    title: "Computer Science, 1st Degree, WSEI, Lublin",
+    date: "2017 - 2020",
     description:
-      'During the study, I was taught different aspects of IT ecosystem. I tried myself in different field of IT like Machine Learning, Big Data, Mobile Developement, Artificial Intellegence. However, among all of them I stopped at Web Development',
+      "During the study, I was taught different aspects of IT ecosystem. I tried myself in different field of IT like Machine Learning, Big Data, Mobile Developement, Artificial Intellegence. However, among all of them I stopped at Web Development",
   },
   {
-    title: 'High School',
-    date: '2014 - 2017',
+    title: "High School",
+    date: "2014 - 2017",
     description:
-      'Reqular school, where I was introduced to Informatics and studied other general subjects ',
+      "Reqular school, where I was introduced to Informatics and studied other general subjects ",
   },
 ];
 
 export const myServices = [
   {
-    title: 'Willing to learn',
+    title: "Willing to learn",
     description:
-      'I do like learning new technologies, frameworks and getting other people`s experience.',
+      "I do like learning new technologies, frameworks and getting other people`s experience.",
     icon: <LearnIcon />,
   },
   {
-    title: 'Communicative',
+    title: "Communicative",
     description:
-      'I find myself quite communicative, easy-going, flexible person.',
+      "I find myself quite communicative, easy-going, flexible person.",
     icon: <CommunicationIcon />,
   },
   {
-    title: 'Reliable ',
-    description: 'You can bet on me and I will not let you down',
+    title: "Reliable ",
+    description: "You can bet on me and I will not let you down",
     icon: <ReliableIcon />,
   },
 ];
 
 export const mySkills = [
   {
-    title: 'Front-end',
+    title: "Front-end",
     technologies: [
       // {
       //   name: 'Javascript',
       //   icon: require('../assets/icons/javascript.svg').default,
       // },
       {
-        name: 'Typescript',
-        icon: require('../assets/icons/typescript.svg').default,
+        name: "Typescript",
+        icon: require("../assets/icons/typescript.svg").default,
       },
 
       {
-        name: 'React',
-        icon: require('../assets/icons/react.svg').default,
+        name: "React",
+        icon: require("../assets/icons/react.svg").default,
       },
       {
-        name: 'NextJs',
-        icon: require('../assets/icons/nextjs.svg').default,
+        name: "Next",
+        icon: require("../assets/icons/nextjs.svg").default,
       },
-      {
-        name: 'Redux / RTK',
-        icon: require('../assets/icons/redux.svg').default,
-      },
-      {
-        name: 'Sass',
-        icon: require('../assets/icons/sass.svg').default,
-      },
-      {
-        name: 'Material-UI',
-        icon: require('../assets/icons/mui.svg').default,
-      },
-      {
-        name: 'GSAP',
-        icon: require('../assets/icons/gsap.svg').default,
-      },
+      // {
+      //   name: "Redux / RTK",
+      //   icon: require("../assets/icons/redux.svg").default,
+      // },
+      // {
+      //   name: "Sass",
+      //   icon: require("../assets/icons/sass.svg").default,
+      // },
+      // {
+      //   name: "Material-UI",
+      //   icon: require("../assets/icons/mui.svg").default,
+      // },
+      // {
+      //   name: "GSAP",
+      //   icon: require("../assets/icons/gsap.svg").default,
+      // },
       // {
       //   name: 'Styled components',
       //   progress: 50,
@@ -209,15 +209,15 @@ export const mySkills = [
     ],
   },
   {
-    title: 'Back-end',
+    title: "Back-end",
     technologies: [
       {
-        name: 'Node/Express',
-        icon: require('../assets/icons/node.svg').default,
+        name: "Node/Express",
+        icon: require("../assets/icons/node.svg").default,
       },
       {
-        name: 'NestJs',
-        icon: require('../assets/icons/nest.svg').default,
+        name: "Nest",
+        icon: require("../assets/icons/nest.svg").default,
       },
       // {
       //   name: 'Apollo',
@@ -258,15 +258,15 @@ export const mySkills = [
     ],
   },
   {
-    title: 'Databases',
+    title: "Databases",
     technologies: [
       {
-        name: 'MongoDB',
-        icon: require('../assets/icons/mongo.svg').default,
+        name: "MongoDB",
+        icon: require("../assets/icons/mongo.svg").default,
       },
       {
-        name: 'PostgreSQL',
-        icon: require('../assets/icons/postgres.svg').default,
+        name: "PostgreSQL",
+        icon: require("../assets/icons/postgres.svg").default,
       },
 
       // {
@@ -288,15 +288,15 @@ export const mySkills = [
     ],
   },
   {
-    title: 'DevOps tools',
+    title: "DevOps tools",
     technologies: [
       {
-        name: 'Git',
-        icon: require('../assets/icons/git.svg').default,
+        name: "Git",
+        icon: require("../assets/icons/git.svg").default,
       },
       {
-        name: 'Docker',
-        icon: require('../assets/icons/docker.svg').default,
+        name: "Docker",
+        icon: require("../assets/icons/docker.svg").default,
       },
       // {
       //   name: 'Polish',
@@ -316,163 +316,163 @@ export const mySkills = [
 
 export const portfolioTabs = [
   {
-    tag: 'Front-end',
-    outerImage: require('../assets/images/instagramLogo.jpg').default,
-    image: require('../assets/images/instagram.jpg').default,
-    title: 'Instagram clone',
-    caption: 'Instagram clone using React and Firebase',
-    desc: 'Initial idea of the project was to try out Tailwind CSS, play with Firebase, write tests using RTL, try out RxJs and RxFire, improve skills in React futhermore and of course, replicate some of the core functionalities of Instagram and its UI. Full list of technologies and replicated feature can be found on GitHub page. It may be still in development. ',
-    link: 'https://github.com/Yevhwnii/inst-clone',
+    tag: "Front-end",
+    outerImage: require("../assets/images/instagramLogo.jpg").default,
+    image: require("../assets/images/instagram.jpg").default,
+    title: "Instagram clone",
+    caption: "Instagram clone using React and Firebase",
+    desc: "Initial idea of the project was to try out Tailwind CSS, play with Firebase, write tests using RTL, try out RxJs and RxFire, improve skills in React futhermore and of course, replicate some of the core functionalities of Instagram and its UI. Full list of technologies and replicated feature can be found on GitHub page. It may be still in development. ",
+    link: "https://github.com/Yevhwnii/inst-clone",
     techs: [
       {
-        name: 'Typescript',
-        icon: require('../assets/icons/typescript.svg').default,
+        name: "Typescript",
+        icon: require("../assets/icons/typescript.svg").default,
       },
       {
-        name: 'React',
-        icon: require('../assets/icons/react.svg').default,
+        name: "React",
+        icon: require("../assets/icons/react.svg").default,
       },
       {
-        name: 'Firebase',
-        icon: require('../assets/icons/firebase.svg').default,
+        name: "Firebase",
+        icon: require("../assets/icons/firebase.svg").default,
       },
 
       {
-        name: 'TailwindCSS',
-        icon: require('../assets/icons/tailwind.svg').default,
+        name: "TailwindCSS",
+        icon: require("../assets/icons/tailwind.svg").default,
       },
-      { name: 'Jest', icon: require('../assets/icons/jest.svg').default },
+      { name: "Jest", icon: require("../assets/icons/jest.svg").default },
     ],
   },
   {
-    tag: 'Front-end',
-    outerImage: require('../assets/images/twitterLogo.jpg').default,
-    image: require('../assets/images/twitter.jpg').default,
-    title: 'Twitter clone (front-end)',
-    caption: 'Front-end part of my twitter clone using MERN stack',
-    desc: 'I tried to implement by myself Twitter and its core functionalities. Among which are: UI of the Twitter as close as possible, CRUD actions on tweets, comments, topics. The reason behind this project for me, is to play with new technologies and improve my existing skills. Stack of technologies I used can be found on GitHub page (link down below).',
-    link: 'https://github.com/Yevhwnii/twitter-mern-frontend',
+    tag: "Front-end",
+    outerImage: require("../assets/images/twitterLogo.jpg").default,
+    image: require("../assets/images/twitter.jpg").default,
+    title: "Twitter clone (front-end)",
+    caption: "Front-end part of my twitter clone using MERN stack",
+    desc: "I tried to implement by myself Twitter and its core functionalities. Among which are: UI of the Twitter as close as possible, CRUD actions on tweets, comments, topics. The reason behind this project for me, is to play with new technologies and improve my existing skills. Stack of technologies I used can be found on GitHub page (link down below).",
+    link: "https://github.com/Yevhwnii/twitter-mern-frontend",
     techs: [
       {
-        name: 'Typescript',
-        icon: require('../assets/icons/typescript.svg').default,
+        name: "Typescript",
+        icon: require("../assets/icons/typescript.svg").default,
       },
       {
-        name: 'React',
-        icon: require('../assets/icons/react.svg').default,
+        name: "React",
+        icon: require("../assets/icons/react.svg").default,
       },
       {
-        name: 'Redux',
-        icon: require('../assets/icons/redux.svg').default,
+        name: "Redux",
+        icon: require("../assets/icons/redux.svg").default,
       },
 
-      { name: 'Material-UI', icon: require('../assets/icons/mui.svg').default },
+      { name: "Material-UI", icon: require("../assets/icons/mui.svg").default },
     ],
   },
   {
-    tag: 'Back-end',
-    outerImage: require('../assets/images/twitterLogo.jpg').default,
-    image: require('../assets/images/twitter.jpg').default,
-    title: 'Twitter clone (back-end)',
-    caption: 'Back-end part of my twitter clone using MERN stack',
-    desc: 'I tried to implement by myself Twitter and its core functionalities. In server part of the application, I tried to supply all required endpoints for my front-end to work properly. I implemented authentication using passportJs, CRUD operation on tweets, route guards, validation of user input, e-mail verification and few more. That was quite fun experience!',
-    link: 'https://github.com/Yevhwnii/twitter-mern-backend',
+    tag: "Back-end",
+    outerImage: require("../assets/images/twitterLogo.jpg").default,
+    image: require("../assets/images/twitter.jpg").default,
+    title: "Twitter clone (back-end)",
+    caption: "Back-end part of my twitter clone using MERN stack",
+    desc: "I tried to implement by myself Twitter and its core functionalities. In server part of the application, I tried to supply all required endpoints for my front-end to work properly. I implemented authentication using passportJs, CRUD operation on tweets, route guards, validation of user input, e-mail verification and few more. That was quite fun experience!",
+    link: "https://github.com/Yevhwnii/twitter-mern-backend",
     techs: [
       {
-        name: 'Typescript',
-        icon: require('../assets/icons/typescript.svg').default,
+        name: "Typescript",
+        icon: require("../assets/icons/typescript.svg").default,
       },
-      { name: 'NodeJs', icon: require('../assets/icons/node.svg').default },
-      { name: 'MongoDB', icon: require('../assets/icons/mongo.svg').default },
+      { name: "NodeJs", icon: require("../assets/icons/node.svg").default },
+      { name: "MongoDB", icon: require("../assets/icons/mongo.svg").default },
     ],
   },
   {
-    tag: 'FullStack',
-    outerImage: require('../assets/images/diplomaLogo.jpg').default,
-    image: require('../assets/images/diploma.jpg').default,
-    title: 'Restaurant finder',
-    caption: 'Application that can help people find place for meal',
-    desc: 'I created this application for my Engineer Thesis. This application allows user to find restaurant on the map and then have a quick glance on its menu and prices. That may help someone to choose place for meal based on his budget. Though, application has still a lot of ways to improve.',
-    link: 'https://github.com/Yevhwnii/diploma-frontend',
+    tag: "FullStack",
+    outerImage: require("../assets/images/diplomaLogo.jpg").default,
+    image: require("../assets/images/diploma.jpg").default,
+    title: "Restaurant finder",
+    caption: "Application that can help people find place for meal",
+    desc: "I created this application for my Engineer Thesis. This application allows user to find restaurant on the map and then have a quick glance on its menu and prices. That may help someone to choose place for meal based on his budget. Though, application has still a lot of ways to improve.",
+    link: "https://github.com/Yevhwnii/diploma-frontend",
     techs: [
       {
-        name: 'Typescript',
-        icon: require('../assets/icons/typescript.svg').default,
+        name: "Typescript",
+        icon: require("../assets/icons/typescript.svg").default,
       },
       {
-        name: 'React',
-        icon: require('../assets/icons/react.svg').default,
+        name: "React",
+        icon: require("../assets/icons/react.svg").default,
       },
-      { name: 'Material-UI', icon: require('../assets/icons/mui.svg').default },
-      { name: 'GSAP', icon: require('../assets/icons/gsap.svg').default },
+      { name: "Material-UI", icon: require("../assets/icons/mui.svg").default },
+      { name: "GSAP", icon: require("../assets/icons/gsap.svg").default },
 
-      { name: 'NodeJs', icon: require('../assets/icons/node.svg').default },
-      { name: 'MongoDB', icon: require('../assets/icons/mongo.svg').default },
+      { name: "NodeJs", icon: require("../assets/icons/node.svg").default },
+      { name: "MongoDB", icon: require("../assets/icons/mongo.svg").default },
     ],
   },
   {
-    tag: 'Front-end',
-    outerImage: require('../assets/images/dollaLogo.jpg').default,
-    image: require('../assets/images/dolla.png').default,
-    title: 'Virtual banking landing page',
-    caption: 'Landing page for potential virtual banking business',
-    desc: 'I created this landing page after I found some inspiration from the mockup. Also, I decided to try out Styled Components and react-scroll libraries. I have figured out how to use them together to create some fancy looking UI.',
-    link: 'https://github.com/Yevhwnii/react-smooth-scroll',
+    tag: "Front-end",
+    outerImage: require("../assets/images/dollaLogo.jpg").default,
+    image: require("../assets/images/dolla.png").default,
+    title: "Virtual banking landing page",
+    caption: "Landing page for potential virtual banking business",
+    desc: "I created this landing page after I found some inspiration from the mockup. Also, I decided to try out Styled Components and react-scroll libraries. I have figured out how to use them together to create some fancy looking UI.",
+    link: "https://github.com/Yevhwnii/react-smooth-scroll",
     techs: [
       {
-        name: 'React',
-        icon: require('../assets/icons/react.svg').default,
+        name: "React",
+        icon: require("../assets/icons/react.svg").default,
       },
-      { name: 'Material-UI', icon: require('../assets/icons/mui.svg').default },
-      { name: 'GSAP', icon: require('../assets/icons/gsap.svg').default },
+      { name: "Material-UI", icon: require("../assets/icons/mui.svg").default },
+      { name: "GSAP", icon: require("../assets/icons/gsap.svg").default },
     ],
   },
   {
-    tag: 'Front-end',
-    outerImage: require('../assets/images/chairLogo.jpg').default,
-    image: require('../assets/images/chair.jpg').default,
-    title: 'Chair shop landing page',
-    caption: 'Landing page for potential chair selling business',
-    desc: 'Landing page for shop that is selling chairs. Mostly, I created this landing page in order to play around with react-three-fiber library which is wrapper around Three.js and allows to inject 3D models into browser.',
-    link: 'https://github.com/Yevhwnii/react-threejs-landing-page',
+    tag: "Front-end",
+    outerImage: require("../assets/images/chairLogo.jpg").default,
+    image: require("../assets/images/chair.jpg").default,
+    title: "Chair shop landing page",
+    caption: "Landing page for potential chair selling business",
+    desc: "Landing page for shop that is selling chairs. Mostly, I created this landing page in order to play around with react-three-fiber library which is wrapper around Three.js and allows to inject 3D models into browser.",
+    link: "https://github.com/Yevhwnii/react-threejs-landing-page",
     techs: [
       {
-        name: 'React',
-        icon: require('../assets/icons/react.svg').default,
+        name: "React",
+        icon: require("../assets/icons/react.svg").default,
       },
-      { name: 'ThreeJs', icon: require('../assets/icons/threejs.svg').default },
+      { name: "ThreeJs", icon: require("../assets/icons/threejs.svg").default },
     ],
   },
 
   {
-    tag: 'FullStack',
-    outerImage: require('../assets/images/travelLogLogo.jpg').default,
-    image: require('../assets/images/travelLog.jpg').default,
-    title: 'Travel Log',
-    caption: 'Travel log application',
-    desc: 'This application allows to mark location where person has been already simply by double clicking on the map. I created this application to play around with MapBox and how I can configure it and then use.',
-    link: 'https://github.com/Yevhwnii/mern-travel-log',
+    tag: "FullStack",
+    outerImage: require("../assets/images/travelLogLogo.jpg").default,
+    image: require("../assets/images/travelLog.jpg").default,
+    title: "Travel Log",
+    caption: "Travel log application",
+    desc: "This application allows to mark location where person has been already simply by double clicking on the map. I created this application to play around with MapBox and how I can configure it and then use.",
+    link: "https://github.com/Yevhwnii/mern-travel-log",
     techs: [
       {
-        name: 'React',
-        icon: require('../assets/icons/react.svg').default,
+        name: "React",
+        icon: require("../assets/icons/react.svg").default,
       },
-      { name: 'NodeJs', icon: require('../assets/icons/node.svg').default },
-      { name: 'MongoDB', icon: require('../assets/icons/mongo.svg').default },
+      { name: "NodeJs", icon: require("../assets/icons/node.svg").default },
+      { name: "MongoDB", icon: require("../assets/icons/mongo.svg").default },
     ],
   },
   {
-    tag: 'Front-end',
-    outerImage: require('../assets/images/trackerLogo.jpg').default,
-    image: require('../assets/images/tracker.jpg').default,
-    title: 'COVID tracker',
-    caption: 'COVID tracking application based on covid19.mathdro API',
-    desc: 'This is simple, COVID tracking application. During the development, I was trying to discover how to work with charts in React. I hope I was successful.',
-    link: 'https://github.com/Yevhwnii/covidtracker',
+    tag: "Front-end",
+    outerImage: require("../assets/images/trackerLogo.jpg").default,
+    image: require("../assets/images/tracker.jpg").default,
+    title: "COVID tracker",
+    caption: "COVID tracking application based on covid19.mathdro API",
+    desc: "This is simple, COVID tracking application. During the development, I was trying to discover how to work with charts in React. I hope I was successful.",
+    link: "https://github.com/Yevhwnii/covidtracker",
     techs: [
       {
-        name: 'React',
-        icon: require('../assets/icons/react.svg').default,
+        name: "React",
+        icon: require("../assets/icons/react.svg").default,
       },
     ],
   },

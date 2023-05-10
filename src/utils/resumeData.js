@@ -10,7 +10,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 const data = {
   name: "Yevhenii Moiseienko",
   title: "Fullstack Developer",
-  aboutMe: `Hi! Glad to see you here, here is small section that introduces me.\n\n  My name is Yevhenii Moiseienko, I originate from Ukraine. After finishing my school, I decided to change something in my life and went for study to Poland. I finished Engineer Degree in WSEI, Lublin and currently I am studying Master Degree there. I feel like I fell in love with React and hope I will not break up with it :).`,
+  aboutMe: `Hi! Glad to see you here, here is small section that introduces me.\n\n  Flexible, reliable person. Lifelong learner, I do love my specialization and enjoy everything about it. Started my IT journey in 2017 and I am not planning to stop`,
 
   socials: {
     Facebook: {
@@ -85,16 +85,46 @@ export const profileTimeline = {
 
 export const workTimeline = [
   {
+    title: "Embiq, React/React Native Developer",
+    date: "01/2022-Present",
+    description: `• Maintaining applications state, developing new modules, implementing new features, meeting client expectations
+      • Code review, mentoring other team members
+      • Fixing bugs, solving logical issues
+      • Evaluating present tasks, meeting the deadlines
+      • Choosing technologies and architecture per technical demand
+      • Developing solutions for existing problems
+      • Optimizing web application performance, SEO, Google Analytics score
+      • Adapting existing application code to meet new expectations and demands
+      • Testing applications
+      • Creating application layouts and views based on designer mockups
+      • Getting my hands on new technologies/solutions to meet project requirements
+      • Active participating in plannings, architecting discussions and other choices in project
+      • Collaborating with team members to deliver the best possible solution`,
+  },
+  {
     title: "Delivence, Frontend Developer",
     date: "02/2021-Currently",
-    description:
-      "Creating front-end web applications, architecting and projecting whole structure of application, providing good UX to the end-user, choosing technologies which help achieve goals, meeting project requirements and client expectations. Received a lot of experience in in React/NextJs ecosystems, team cooperation, working with clients. Mostly worked in duo with back-end college, which gave me a lot of experience of creating and managing projects by myself.",
+    description: `• Working in a team to meet client expectation
+    • Delivering good UX to the end-users
+    • Proposing solutions based on client\`s budget
+    • Collaborating with other team members
+    • Designing and implementing layout of web application
+    • Code refactoring
+    • Leading project
+    • Choosing technologies per project requirements and deadlines
+    • Adjusting existing layouts per new client vision
+    • Working in ever-developing environment
+    • Participating in client workshops, actively providing solutions for client needs
+    • Planning and time evaluation
+    `,
   },
   {
     title: '"Zwyczajny obiad" Startup Internship',
     date: "02/2020-05/2020",
-    description:
-      'Main responsibilities were creation of CRM system for mobile application "Zwyczajny obiad" using React and its underlying packages. During that internships, I have got a lot of experience from other developers in different aspects of Web Development.',
+    description: `• Testing existing modules and functionalities
+      • Learning new technologies
+      • Consuming API endpoints
+      • Collaborating with team members`,
   },
   {
     title: "Venture Devs Internship",
@@ -105,16 +135,15 @@ export const workTimeline = [
 ];
 export const educationTimeline = [
   {
-    title: "Computer Science, 2st Degree, WSEI, Lublin",
-    date: "2020 - Present",
+    title: "Computer Science, Master Degree, WSEI, Lublin",
+    date: "2020 - 2022",
     description:
-      "Currently, I am continuing my study at the same University to get Master Degree in Computer Science",
+      "During this course, I was taught basics of Cybersecurity, security practices, how law works in IT branch and improved my already acquired skills during Engineer degree even further. Also, I was introduced to various production concepts, CI/CD tools, Docker, Terraform and Kubernetes. I had an occasion to play around with Storybook, Sentry and other interesting technologies.",
   },
   {
-    title: "Computer Science, 1st Degree, WSEI, Lublin",
+    title: "Computer Science, Engineer Degree, WSEI, Lublin",
     date: "2017 - 2020",
-    description:
-      "During the study, I was taught different aspects of IT ecosystem. I tried myself in different field of IT like Machine Learning, Big Data, Mobile Developement, Artificial Intellegence. However, among all of them I stopped at Web Development",
+    description: `During this course, I was introduced to various fields of IT. The most noticeable were Machine Learning, Artificial Intelligence, Mobile Development, Web development, Cloud Computing, Big Data and IoT. These knowledge improved my overall understanding of IT branch as well as gave me insight on how things work internally.`,
   },
   {
     title: "High School",
@@ -159,6 +188,10 @@ export const mySkills = [
 
       {
         name: "React",
+        icon: require("../assets/icons/react.svg").default,
+      },
+      {
+        name: "React Native",
         icon: require("../assets/icons/react.svg").default,
       },
       {

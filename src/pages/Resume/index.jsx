@@ -1,23 +1,23 @@
-import React from 'react';
-import './Resume.css';
-import { Grid, Typography } from '@material-ui/core';
-import TimelineItem from '@material-ui/lab/TimelineItem';
-import TimelineContent from '@material-ui/lab/TimelineContent';
-import WorkIcon from '@material-ui/icons/Work';
-import EducationIcon from '@material-ui/icons/AccountBalance';
+import React from "react";
+import "./Resume.css";
+import { Grid, Typography } from "@material-ui/core";
+import TimelineItem from "@material-ui/lab/TimelineItem";
+import TimelineContent from "@material-ui/lab/TimelineContent";
+import WorkIcon from "@material-ui/icons/Work";
+import EducationIcon from "@material-ui/icons/AccountBalance";
 
 import CustomTimeline, {
   CustomTimelineSeparator,
-} from '../../components/Timeline';
-import { workTimeline, educationTimeline } from '../../utils/resumeData';
-import FadeDiv from '../../components/Fade';
+} from "../../components/Timeline";
+import { workTimeline, educationTimeline } from "../../utils/resumeData";
+import FadeDiv from "../../components/Fade";
 
 const Resume = () => {
   return (
     <>
       <FadeDiv>
-        <Grid container className='section' style={{ paddingBottom: 45 }}>
-          <Grid item className='section_title' style={{ marginBottom: 30 }}>
+        <Grid container className="section" style={{ paddingBottom: 45 }}>
+          <Grid item className="section_title" style={{ marginBottom: 30 }}>
             <span></span>
             <h6>Experience</h6>
           </Grid>
@@ -25,10 +25,13 @@ const Resume = () => {
             <Grid item container>
               <Grid item sm={12} md={6}>
                 {/* Working History timeline */}
-                <CustomTimeline title='Working history' icon={<WorkIcon />}>
+                <CustomTimeline title="Working history" icon={<WorkIcon />}>
                   {workTimeline.map((work, i) => {
                     return (
-                      <TimelineItem key={work.title}>
+                      <TimelineItem
+                        style={{ whiteSpace: "pre-line" }}
+                        key={work.title}
+                      >
                         <CustomTimelineSeparator />
                         <TimelineContent
                           style={
@@ -36,18 +39,21 @@ const Resume = () => {
                               ? { marginBottom: 3 }
                               : {}
                           }
-                          className='timeline_content'>
-                          <Typography className='timeline_title'>
+                          className="timeline_content"
+                        >
+                          <Typography className="timeline_title">
                             {work.title}
                           </Typography>
                           <Typography
-                            variant='caption'
-                            className='timeline_date'>
+                            variant="caption"
+                            className="timeline_date"
+                          >
                             {work.date}
                           </Typography>
                           <Typography
-                            variant='body2'
-                            className='timeline_description'>
+                            variant="body2"
+                            className="timeline_description"
+                          >
                             {work.description}
                           </Typography>
                         </TimelineContent>
@@ -59,8 +65,9 @@ const Resume = () => {
               <Grid item sm={12} md={6}>
                 {/* Education History timeline */}
                 <CustomTimeline
-                  title='Education history'
-                  icon={<EducationIcon />}>
+                  title="Education history"
+                  icon={<EducationIcon />}
+                >
                   {educationTimeline.map((education, i) => {
                     return (
                       <TimelineItem key={education.title}>
@@ -71,18 +78,21 @@ const Resume = () => {
                               ? { marginBottom: 3 }
                               : {}
                           }
-                          className='timeline_content'>
-                          <Typography className='timeline_title'>
+                          className="timeline_content"
+                        >
+                          <Typography className="timeline_title">
                             {education.title}
                           </Typography>
                           <Typography
-                            variant='caption'
-                            className='timeline_date'>
+                            variant="caption"
+                            className="timeline_date"
+                          >
                             {education.date}
                           </Typography>
                           <Typography
-                            variant='body2'
-                            className='timeline_description'>
+                            variant="body2"
+                            className="timeline_description"
+                          >
                             {education.description}
                           </Typography>
                         </TimelineContent>
